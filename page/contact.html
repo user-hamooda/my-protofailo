@@ -93,7 +93,7 @@
         <div class="social">
           <div class="box">
             <div class="card" id="cv">
-              <a href="#" id="downloadButton" target="_blank">
+              <a href="../cv.docx" download="mohammed al-amoudi cv" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -234,24 +234,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const downloadButton = document.getElementById("downloadButton");
-      downloadButton.addEventListener("click", () => {
-        // const fileUrl = "https://example.com/file-to-download.pdf";
-        const fileUrl = "file:///C:/Users/PC/OneDrive/سطح%20المكتب/protofailo/cv.docx";
-        const fileName = "file-to-download.pdf";
-
-        const a = document.createElement("a");
-        a.href = fileUrl;
-        a.download = fileName;
-
-        document.body.appendChild(a);
-
-        a.click();
-
-        document.body.removeChild(a);
-      });
-    </script>
   </body>
 </html>

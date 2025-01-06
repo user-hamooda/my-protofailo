@@ -124,7 +124,7 @@
         <!-- under btns -->
         <div class="btn">
           <!-- btn1 cv -->
-          <a id="downloadButton" href="#">
+          <a href="../cv.docx" download="mohammed al-amoudi cv" target="_blank">
             CV
             <span
               ><svg
@@ -180,24 +180,5 @@
         </div>
       </div>
     </section>
-
-    <script>
-      const downloadButton = document.getElementById("downloadButton");
-      downloadButton.addEventListener("click", () => {
-        // const fileUrl = "https://example.com/file-to-download.pdf";
-        const fileUrl = "file:///C:/Users/PC/OneDrive/سطح%20المكتب/protofailo/cv.docx";
-        const fileName = "file-to-download.pdf";
-
-        const a = document.createElement("a");
-        a.href = fileUrl;
-        a.download = fileName;
-
-        document.body.appendChild(a);
-
-        a.click();
-
-        document.body.removeChild(a);
-      });
-    </script>
   </body>
 </html>

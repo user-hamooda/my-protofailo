@@ -1,0 +1,251 @@
+/* color */
+:root {
+    --blue: #0078d7;
+    --black: #1a1c1d;
+    --white: #ffffff;
+    --shadow: 0px 0px 15px rgb(0 0 0 / 0.3);
+    --transition: all 0.3s ease;
+    --eee: #26292a;
+    --text: #c0c0c0;
+}
+
+/* scrollbar */
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #424242;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 7px;
+}
+
+/* end scrollbar */
+
+/* start main style css */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+*:focus {
+    box-shadow: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", "system-ui";
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav,
+.container {
+    width: 90%;
+    margin: auto;
+}
+/* end main style css */
+
+/* title */
+.title {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--eee);
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;
+    height: 2px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+/* start navbar */
+header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--eee);
+    box-shadow: var(--shadow);
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+nav li a {
+    color: var(--text);
+    transition: var(--transition);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav li.active a,
+nav li a:hover {
+    color: var(--blue);
+}
+
+/* navbar responsive */
+
+/* the btn navbar responsive */
+.btn_ul_navbar {
+    display: none;
+}
+
+/* responsive width 425px */
+@media (max-width: 430px) {
+    nav ul {
+        display: none;
+    }
+    .btn_ul_navbar {
+        display: block;
+        margin: 0 0 0 auto;
+    }
+}
+
+/* end navbar */
+/* start home */
+.home {
+    height: calc(100vh - 70px);
+}
+
+.home .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .container h1 {
+    margin: 15px 0 0 0;
+    font-size: 40px;
+}
+
+.home .container p {
+    letter-spacing: 1px;
+}
+
+.home .container .btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .container .btn a {
+    margin: 0 5px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 2px solid #0078d7;
+    border-radius: 7px;
+    transition: var(--transition);
+}
+
+.home .container .btn a:hover {
+    background-color: var(--blue);
+}
+
+.home .container .btn a:not(:last-child) span {
+    height: 18px;
+}
+
+.home .container .btn a:last-child span {
+    height: 20px;
+}
+
+/* home responsive */
+
+/* responsive width 425px */
+@media (max-width: 430px) {
+    .home .container {
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    #downloadButton {
+        width: 270px;
+        margin: 10px 0;
+    }
+}
+
+
+/* responsive width 475px */
+@media (max-width: 380px) {
+    .home .container h1 {
+        font-size: 35px;
+        font-size: 40px;
+        line-height: 35px;
+        line-height: 40px;
+    }
+    .home .container h1 span {
+        display: block;
+    }
+    .home .container p {
+        line-height: 20px;
+        padding: 3px;
+    }
+}
+
+/* end home */

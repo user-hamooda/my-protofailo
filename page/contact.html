@@ -21,9 +21,9 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- link main css -->
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <!-- link contact css -->
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/contact.min.css" />
   </head>
 
   <body>
@@ -68,20 +68,23 @@
     <div class="contact">
       <div class="title">Contact</div>
       <div class="container">
-        <form>
+        <form id="message">
           <div>
             <div class="name">
               <label>Name</label>
-              <input type="text" placeholder="your name" />
+              <input type="text" id="name" name="name" placeholder="your name" required />
             </div>
             <div class="email">
               <label>Email</label>
-              <input type="email" placeholder="mail@gmail.com" />
+              <input type="email" id="email" name="email" placeholder="mail@gmail.com" required />
             </div>
             <div class="doc">
               <textarea
+              id="textarea"
+              name="textarea"
                 rows="3"
                 placeholder="Write your question or comments"
+                required
               ></textarea>
             </div>
             <div class="btn">
@@ -94,7 +97,7 @@
           <div class="box">
             <div class="card" id="cv">
               <a
-                href="../cv.docx"
+                href="../cv-pdf.pdf"
                 download="mohammed al-amoudi cv"
                 target="_blank"
               >
@@ -113,7 +116,7 @@
               </a>
             </div>
             <div class="card" id="snapchat">
-              <a href="#" target="_blank">
+              <a style="cursor: not-allowed;" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -130,7 +133,7 @@
               </a>
             </div>
             <div class="card" id="linkedin">
-              <a href="#" target="_blank">
+              <a style="cursor: not-allowed;" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -202,7 +205,7 @@
             </div>
             <div class="card" id="whatsapp">
               <!-- <a href="tel:+972597772385" target="_blank"> -->
-              <a href="https://wa.me/00972597772385" target="_blank">
+              <a href="https://wa.me/+972597772385" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -239,5 +242,8 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/form.min.js"></script>
+    <script src="../js/server.min.js"></script>
   </body>
 </html>

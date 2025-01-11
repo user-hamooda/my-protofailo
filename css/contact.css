@@ -166,8 +166,11 @@
         flex-direction: column;
         text-align: center;
     }
-    .contact .container .social .box .card a:last-child {
+    .contact .container .social .box #envelope a {
         line-height: 10px;
+    }
+    .contact .container .social .box #cv a {
+        line-height: 18px;
     }
 }
 

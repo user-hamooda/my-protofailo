@@ -77,6 +77,20 @@
     font-size: 18px;
 }
 
+/* contact  */
+
+.un-contact {
+    color: var(--text);
+    width: fit-content;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.un-contact a {
+    text-decoration: underline;
+    color: #4d4dff;
+}
+
 /* about responsive */
 
 /* responsive width 768px */
@@ -112,6 +126,11 @@
 
     .about .skills .container .box {
         width: 180px;
+    }
+
+    .un-contact span {
+        display: block;
+        width: 100%;
     }
 }
 

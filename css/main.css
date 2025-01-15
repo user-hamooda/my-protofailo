@@ -67,6 +67,7 @@ nav,
     width: 90%;
     margin: auto;
 }
+
 /* end main style css */
 
 /* title */
@@ -150,6 +151,7 @@ nav li a:hover {
     nav ul {
         display: none;
     }
+
     .btn_ul_navbar {
         display: block;
         margin: 0 0 0 auto;
@@ -255,9 +257,11 @@ nav ul.show li {
         line-height: 35px;
         line-height: 40px;
     }
+
     .home .container h1 span {
         display: block;
     }
+
     .home .container p {
         line-height: 20px;
         padding: 3px;
@@ -265,3 +269,48 @@ nav ul.show li {
 }
 
 /* end home */
+
+/* loading */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#loading h6 {
+    position: absolute;
+    bottom: 75px;
+    font-weight: inherit;
+    font-size: 16px;
+}
+
+#loading p {
+    position: absolute;
+    bottom: 50px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* loading */

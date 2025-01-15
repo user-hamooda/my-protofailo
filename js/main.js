@@ -5,4 +5,11 @@ document.getElementById('nav_mobile_btn').addEventListener('click', function () 
     } else {
         target.classList.add('show');
     }
-}); 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }, 2000);
+});

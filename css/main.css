@@ -277,7 +277,7 @@ nav ul.show li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,6 +300,7 @@ nav ul.show li {
 .spinner {
     width: 50px;
     height: 50px;
+    background-image: url(../favicon.ico);
     animation: spin 1s linear infinite;
 }
 

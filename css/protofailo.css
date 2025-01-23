@@ -51,9 +51,17 @@
     width: 60%;
 }
 
-.protofailo .container #card_5,
-.protofailo .container #card_6,
-.protofailo .container #card_7 {
+.protofailo .container #card_5 {
+    width: 60%;
+}
+
+.protofailo .container #card_6 {
+    width: 35%;
+}
+
+.protofailo .container #card_7,
+.protofailo .container #card_8,
+.protofailo .container #card_9 {
     width: 31%;
 }
 

@@ -367,54 +367,64 @@ nav ul.show li {
 /* end home */
 
 /* start about us & skills */
-.about .about_us .container {
+.about .about_us .container .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about_us .container .box .text {
+    width: 50%;
     position: relative;
-    padding: 15px;
+    padding-left: 10px;
+    color: var(--text);
+    /* color: transparent; */
+    /* background-image: linear-gradient(var(--white), var(--text)); */
+}
+
+.about .about_us .container .box .text::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--text);
+}
+
+.about .about_us .container .box .card {
+    width: 45%;
     border-radius: 7px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
     background-color: var(--eee);
 }
 
-.about .about_us .container .text {
-    width: 50%;
-    color: var(--white);
-}
-
-.about .about_us .container .text .top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.about .about_us .container .text .top .name {
-    margin-left: 15px;
-}
-
-.about .about_us .container .text .top .name span {
-    display: block;
-    color: var(--text);
-}
-
-.about .about_us .container .text p {
-    letter-spacing: 1px;
-    line-height: 25px;
-}
-
-.about .about_us .container .text p span {
-    color: var(--blue);
-}
-
-.about .about_us .container .form {
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 500px;
-    height: 200px;
-}
-
-.about .about_us .container .form svg {
+.about .about_us .container .box .card div {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    position: relative;
+}
+
+.about .about_us .container .box .card div label {
+    position: absolute;
+    left: 0;
+}
+
+.about .about_us .container .box .card div p {
+    text-align: center;
+    width: 60%;
+    margin-left: 8rem;
+
+    a {
+        color: var(--blue);
+    }
 }
 
 .about .skills {
@@ -449,27 +459,22 @@ nav ul.show li {
 
 /* responsive width 768px */
 @media (max-width: 770px) {
-    .about .about_us .container .text {
+    .about .about_us .container .box {
+        flex-direction: column;
+    }
+
+    .about .about_us .container .box .text {
         width: 100%;
-        height: 490px;
+        margin-bottom: 30px;
+    }
+
+    .about .about_us .container .box .card {
+        width: 100%;
     }
 }
 
 /* responsive width 425px */
 @media (max-width: 430px) {
-    .about .about_us .container .text {
-        height: 500px;
-    }
-
-    .about .about_us .container .text p {
-        height: 420px;
-        overflow-x: scroll;
-    }
-
-    .about .about_us .container .form {
-        display: none;
-    }
-
     .about .skills {
         padding-top: 30px;
     }
@@ -485,6 +490,11 @@ nav ul.show li {
 
 /* responsive width 375px */
 @media (max-width: 380px) {
+    .about .about_us .container .box .card div p {
+        width: 78%;
+        margin-left: 4rem;
+    }
+
     .about .skills .container .box {
         width: 150px;
         padding: 0 5px;
@@ -753,6 +763,16 @@ nav ul.show li {
 #envelope svg:hover {
     color: #b97b29;
 }
+
+.contact .container .social .box2 {
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 
 /* navbar responsive */
 

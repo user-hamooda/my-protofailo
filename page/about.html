@@ -71,7 +71,7 @@
           <div class="box">
             <div class="text">
               Hi 🥰
-              <br>
+              <br />
               I am currently studying at the Islamic University of Gaza with a
               bachelor’s degree in information technology and have obtained
               other certificates along the way. I have done many projects to
@@ -80,11 +80,11 @@
             <div class="card">
               <div>
                 <label>Name</label>
-                <p>Mohammed Ahmed Saleh AL-Amoudi</p>
+                <p>Mohammed Ahmed AL-Amoudi</p>
               </div>
               <div>
-                <label>My Birthday</label>
-                <p>18/10/2005</p>
+                <label>Age</label>
+                <p>19</p>
               </div>
               <div>
                 <label>Email</label>
@@ -96,7 +96,7 @@
               </div>
               <div>
                 <label>Freelance</label>
-                <p>Open</p>
+                <p>Close</p>
               </div>
               <div>
                 <label>Cv</label>
@@ -448,4 +448,31 @@
     </section>
   </body>
   <script src="../js/main.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const title = document.querySelector(".title");
+      title.classList.add("opacity");
+    });
+
+    // __________
+
+    window.addEventListener("load", function () {
+      const text = document.querySelector(".text");
+      text.classList.add("opacity");
+    });
+
+    // __________
+
+    window.addEventListener("load", function () {
+      const card = document.querySelector(".card");
+      card.classList.add("opacity");
+    });
+
+    // __________
+
+    window.addEventListener("load", function () {
+      const skills = document.querySelector(".skills");
+      skills.classList.add("opacity");
+    });
+  </script>
 </html>

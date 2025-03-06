@@ -364,6 +364,34 @@ nav ul.show li {
     }
 }
 
+/* end res */
+/* start animation opacity */
+.home .container .img {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 3s, transform 2s;
+}
+
+.home .container .img.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================== */
+
+.home .container .text {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 3s, transform 2s;
+}
+
+.home .container .text.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* end animation opacity */
+
 /* end home */
 
 /* start about us & skills */
@@ -512,6 +540,60 @@ nav ul.show li {
     }
 }
 
+/* end res */
+/* start animation opacity */
+.about_us .title {
+    opacity: 0;
+    transform: translateY(-45px);
+    transition: opacity 3s, transform 2s;
+}
+
+.about_us .title.opacity {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================== */
+
+.about .about_us .container .box .text {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 3s, transform 2s;
+}
+
+.about .about_us .container .box .text.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================== */
+
+.about .about_us .container .box .card {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 3s, transform 2s;
+}
+
+.about .about_us .container .box .card.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================== */
+
+.about .skills {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 3s, transform 2s;
+}
+
+.about .skills.opacity {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* end animation opacity */
+
 /* end about us & skills */
 /* start protofailo */
 
@@ -633,6 +715,12 @@ nav ul.show li {
         width: 100%;
     }
 }
+
+/* end res */
+
+/* start animation opacity */
+
+/* end animation opacity */
 
 /* end protofailo */
 
@@ -792,4 +880,45 @@ nav ul.show li {
     }
 }
 
+/* end res */
+
+/* start animation opacity */
+.contact .title {
+    opacity: 0;
+    transform: translateY(-45px);
+    transition: opacity 3s, transform 2s;
+}
+
+.contact .title.opacity {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================== */
+
+.contact .container .form {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 3s, transform 2s;
+}
+
+.contact .container .form.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================== */
+
+.contact .container .social {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 3s, transform 2s;
+}
+
+.contact .container .social.opacity {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* end animation opacity */
 /* end contact */

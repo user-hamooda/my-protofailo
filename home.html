@@ -107,11 +107,12 @@
           <!-- text left -->
           <div class="text">
             <!-- h1 -->
-            <h1 style="font-family: Lobster, serif;">Mohammed <span>AL-Amoudi</span></h1>
+            <h1 style="font-family: Lobster, serif">
+              Mohammed <span>AL-Amoudi</span>
+            </h1>
             <!-- p -->
             <h3>
-              <span>Front End Developer,</span> Experience of more than 15
-              months
+              <span>Front End Developer,</span> Bachelor’s In Information Technology
             </h3>
             <!-- btns -->
             <div class="btn">
@@ -196,4 +197,17 @@
     </div>
   </body>
   <script src="js/main.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      const text = document.querySelector(".text");
+      text.classList.add("opacity");
+    });
+
+    // __________
+
+    window.addEventListener("load", function () {
+      const img = document.querySelector(".img");
+      img.classList.add("opacity");
+    });
+  </script>
 </html>

@@ -7,3 +7,13 @@ document.getElementById('nav_mobile_btn').addEventListener('click', function () 
         target.classList.add('show');
     }
 });
+
+// window.addEventListener('scroll', function () {
+//     const text = document.querySelector('.text');
+//     const textPosition = text.getBoundingClientRect().top;
+//     const screenPosition = window.innerHeight / 1.19;
+
+//     if (textPosition < screenPosition) {
+//         text.classList.add('opacity');
+//     }
+// });
